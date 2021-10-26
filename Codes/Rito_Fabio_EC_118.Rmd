@@ -1,0 +1,107 @@
+---
+title: "Rito_Fabio_EC_118"
+author: "Sdelci Lab"
+date: "`r Sys.Date()`"
+output:
+    html_document:
+      code_folding: hide
+      toc: true
+      toc_depth: 2
+      highlight: tango
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'Rito_Fabio_EC_118.html')) })
+
+---
+Always to change: File_name [done], Source [done], Conditions [done], Sample_n [done], title [done]
+
+```{r setup_packages,  echo=FALSE, cache=FALSE, warning= FALSE, message=FALSE}
+method = "classical DDA"
+output_folder = here::here("Output","EC_118")
+
+# pacman::p_load("knitr","readr","tidyverse", "openxlsx", "stringr",
+#                "data.table","BiocManager","openxlsx","factoextra", "devtools",
+#                "DescTools", "UpSetR", "magick", "proteus","SubCellBarCode")
+
+source_file_name <- here::here("Codes",
+                               "functions.R")
+source(source_file_name)
+
+file_parsed = parse(source_file_name) %>% 
+    Filter(is_function, .)  
+unlist(Map(function_name, file_parsed))
+
+## Global options
+options(max.print="75")
+opts_chunk$set(cache=FALSE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+#opts_knit$set(root.dir = "./../")
+```
+
+```{r loading_maxquant, fig.width = 14, fig.height=14}
+txt_folder <-  here::here("Datasets","Raw",
+                            "EC_118",
+                            "txt")
+Quality_Control(txt_folder)
+
+columns_to_keep = c("Majority protein IDs",
+                    "LFQ intensity","Potential","Reverse")
+
+Samples_df <- data.frame(order = 1:12 %>% as.character() %>% paste0(" ",.),
+                         raw = c("P11906","P11907","P11908","P11909","P11910","P11911","P11912","P11913","P11914","P11915","P11916","P11917"),
+                         sample = c(paste0("N_UC_",1:3),
+                                    paste0("N_C_",1:3),
+                                    paste0("C_C_",1:3),
+                                    paste0("C_UC_",1:3)))
+                         
+
+Data_matrix <- fread(here::here(txt_folder,
+                            "proteinGroups.txt")) %>%
+  dplyr::select(matches(paste(columns_to_keep, collapse = "|"))) %>% 
+  set_names(.,str_replace_all(colnames(.),Samples_df %>% pull(sample,order) %>% rev())) %>% 
+  janitor::clean_names() %>% 
+  subset(!((reverse == "+") | (potential_contaminant == "+"))) %>% 
+  dplyr::select(-c(reverse,potential_contaminant)) %>% 
+  mutate(majority_protein_i_ds  = str_remove_all(majority_protein_i_ds,";[:graph:]*")) %>% 
+  column_to_rownames("majority_protein_i_ds") %>% 
+  mutate(across(everything(),~na_if(.x,0))) %>% 
+  set_names(.,str_remove_all(colnames(.),"lfq_intensity_")) %>% 
+  glimpse()
+HUMAN_9606 <- read_tsv(here::here("Datasets","Raw", "HUMAN_9606_idmapping.dat"),
+                 col_names = FALSE) %>% 
+  set_names(c("Uniprot","Type","ID"))
+
+DEP_data <- DEP_DDA(Data_matrix,"Rito_Fabio_EC_118")
+
+ego2 <- gseGO(geneList     = DEP_data$DEPs$c_c_vs_c_uc_diff %>% pull(log2_FC, Uniprot) %>% sort(decreasing = T) ,
+                 OrgDb        = org.Hs.eg.db,
+                 ont          = "ALL",
+                 keyType = "UNIPROT",
+                 #nPerm        = 1000,
+                 minGSSize    = 50,
+                 maxGSSize    = 500,
+                 pvalueCutoff = 0.05,
+                 verbose      = FALSE)
+   if((ego2@result %>% nrow)>0){
+       enrichplot::ridgeplot(ego2, showCategory = 68)+
+           ggtitle(glue::glue(dataset_name," ALL-GSEA"))
+       ggsave(here::here(output_folder, glue::glue("c_c_vs_c_uc_diff","DDA_118", "ALL-GSEA.png")), height = 20, width  = 15)}
+  ego3 <- gseGO(geneList     = DEP_data$DEPs$n_c_vs_n_uc_diff %>% pull(log2_FC, Uniprot) %>% sort(decreasing = T) ,
+                 OrgDb        = org.Hs.eg.db,
+                 ont          = "ALL",
+                 keyType = "UNIPROT",
+                 #nPerm        = 1000,
+                 minGSSize    = 50,
+                 maxGSSize    = 500,
+                 pvalueCutoff = 0.05,
+                 verbose      = FALSE)
+   if((ego3@result %>% nrow)>0){
+       enrichplot::ridgeplot(ego3, showCategory = 68)+
+           ggtitle(glue::glue(dataset_name," ALL-GSEA"))
+       ggsave(here::here(output_folder, glue::glue("n_c_vs_n_uc_diff","DDA_118", "ALL-GSEA.png")), height = 20, width  = 15)}
+   
+
+```
+

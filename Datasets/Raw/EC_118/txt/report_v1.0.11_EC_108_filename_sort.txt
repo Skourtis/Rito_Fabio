@@ -1,0 +1,15 @@
+# This file can be used to manually substitute Raw file names within the report.
+# The ordering of Raw files in the report can be changed by re-arranging the rows.
+orig.Name	new.Name	best.effort
+EC_118-M990-A04-P11909-1	file 01	..A04-P..1909-1
+EC_118-M990-A05-P11910-1	file 02	..A05-P..1910-1
+EC_118-M990-A07-P11912-1	file 03	..A07-P..1912-1
+EC_118-M990-A08-P11913-1	file 04	..A08-P..1913-1
+EC_118-M990-B01-P11914-1	file 05	..B01-P..1914-1
+EC_118-M990-B02-P11915-1	file 06	..B02-P..1915-1
+EC_118-M990-B03-P11916-1	file 07	..B03-P..1916-1
+EC_118-M990-B04-P11917-1	file 08	..B04-P..1917-1
+EC_118-M990-A01-P11906-1	file 09	..A01-P..1906-1
+EC_118-M990-A02-P11907-1	file 10	..A02-P..1907-1
+EC_118-M990-A03-P11908-1	file 11	..A03-P..1908-1
+EC_118-M990-A06-P11911-1	file 12	..A06-P..1911-1

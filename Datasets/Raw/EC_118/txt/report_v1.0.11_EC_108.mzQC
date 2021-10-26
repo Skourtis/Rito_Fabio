@@ -1,0 +1,419 @@
+{
+  "mzQC": {
+    "version": "1.0.0",
+    "creationDate": "2021-10-26T11:29:34",
+    "contactName": "skourtis",
+    "runQualities": [
+      [
+        {
+          "metadata": {
+            "label": "EC_118-M990-A04-P11909-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A04-P11909-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_3_10-21-2021\\EC_118-M990-A04-P11909-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 2340
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A05-P11910-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A05-P11910-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_3_10-21-2021\\EC_118-M990-A05-P11910-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 2309
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A07-P11912-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A07-P11912-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_4_10-21-2021\\EC_118-M990-A07-P11912-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3398
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A08-P11913-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A08-P11913-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_4_10-21-2021\\EC_118-M990-A08-P11913-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3254
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-B01-P11914-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-B01-P11914-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_4_10-21-2021\\EC_118-M990-B01-P11914-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3305
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-B02-P11915-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-B02-P11915-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_5_10-21-2021\\EC_118-M990-B02-P11915-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3684
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-B03-P11916-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-B03-P11916-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_5_10-21-2021\\EC_118-M990-B03-P11916-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3812
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-B04-P11917-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-B04-P11917-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_5_10-21-2021\\EC_118-M990-B04-P11917-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 3694
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A01-P11906-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A01-P11906-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_2_10-21-2021\\EC_118-M990-A01-P11906-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 2027
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A02-P11907-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A02-P11907-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_2_10-21-2021\\EC_118-M990-A02-P11907-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 1816
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A03-P11908-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A03-P11908-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_2_10-21-2021\\EC_118-M990-A03-P11908-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 1450
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "label": "EC_118-M990-A06-P11911-1",
+            "inputFiles": [
+              {
+                "name": "EC_118-M990-A06-P11911-1.raw",
+                "location": "F:\\RitoDDA\\OneDrive_3_10-21-2021\\EC_118-M990-A06-P11911-1.raw",
+                "fileFormat": {
+                  "accession": "MS:1000563",
+                  "name": "Thermo RAW format"
+                }
+              }
+            ],
+            "analysisSoftware": [
+              {
+                "accession": "MS:1003162",
+                "name": "PTX-QC",
+                "version": "1.0.11",
+                "uri": "https://github.com/cbielow/PTXQC/",
+                "description": "Proteomics (PTX) - QualityControl (QC) software for QC report generation and visualization.",
+                "value": "Proteomics Quality Control"
+              }
+            ]
+          },
+          "qualityMetrics": [
+            {
+              "accession": "QC:4000184",
+              "name": "Number of different distinct proteins from all PSM",
+              "description": "\"Number of different distinct protein from all PSM after FDR filtering. (No undistinguishability groups.)\" [PSI:QC]",
+              "value": 2441
+            }
+          ]
+        }
+      ]
+    ],
+    "controlledVocabularies": [
+      {
+        "name": "Proteomics Standards Initiative Quality Control Ontology",
+        "uri": "https://github.com/HUPO-PSI/mzQC/blob/master/cv/qc-cv.obo",
+        "version": "1.2.0"
+      },
+      {
+        "name": "Proteomics Standards Initiative Mass Spectrometry Ontology",
+        "uri": "https://github.com/HUPO-PSI/psi-ms-CV/blob/master/psi-ms.obo",
+        "version": "4.1.7"
+      }
+    ]
+  }
+}
